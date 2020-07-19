@@ -2,11 +2,8 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  current = name_hash
+  current = nil
   name_hash.each do |key, value|
-    if current == NIL
-        current = key[value]
-    end
     if key[value] < current
       current = key[value]
     end
