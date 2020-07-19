@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   winner = nil
-  current = name_hash.sample
+  current = 10000
   name_hash.each do |key, value|
     if key != nil && value < current
       
