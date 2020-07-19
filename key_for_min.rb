@@ -3,11 +3,12 @@
 
 def key_for_min_value(name_hash)
   winner = nil
-  name_hash.each do |key, value|
-    if key != nil && value < current
-      if current == nil
+  if current == nil
         current = value
       end
+  name_hash.each do |key, value|
+    if key != nil && value < current
+      
       current = value
       winner = key
     end
